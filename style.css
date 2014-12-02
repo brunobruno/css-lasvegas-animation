@@ -1,0 +1,85 @@
+body{
+	margin:0;
+	background-color: #eee;
+	background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+	linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+	background-size:100px 100px;
+}
+#container{
+	max-width:500px;
+	border: solid 1px #000;
+	height:500px;
+	padding:12px 0 0 12px;
+	background:DarkGreen ;
+	border-radius:50%;
+	margin:0 auto
+	}
+.box {
+    border: solid 1px #000;
+    display: block;
+    width:110px;
+	float:left;
+    height: 160px;
+	color:red;
+	font-size:30px;
+	margin-left:5px;
+	drop-shadow:3px;
+	border-radius:8px;
+	padding:2px;
+	-webkit-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.50);
+	-moz-box-shadow:4px 4px 4px 0px rgba(50, 50, 50, 0.50);
+	box-shadow:4px 4px 4px 0px rgba(50, 50, 50, 0.50);
+    background-color: white;
+    -webkit-transition:width 3s, height 3s, background-color 3s, -webkit-transform 3s;
+    transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+.box:hover {width:110px;height:160px;
+    /*-webkit-transform:rotate(180deg);*/
+    /*transform:rotate(180deg);*/
+	transform: translate(0,190px) rotate(180deg); 
+}
+.inner{
+	border: 4px solid;
+	border-color: black #444 #888 #ccc;
+	height:75px;
+	width:50%;
+	margin-left:24px;
+	background-color:silver;
+	background: 
+	linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+	linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+	linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+	linear-gradient(45deg, #ECEDDC 25%, transparent 25%);	
+	background-size: 15px 15px;
+	background-color: #EC173A;
+}
+.inner:hover{background-color:silver;}
+.black{color:#000;z-index:5}
+.rht{float:right;transform:rotate(180deg)}
+.goldtable{width:100%;position:fixed;bottom:0;height:120px;background:gold;border-top:10px solid GoldenRod}
+.pokerchip{
+  margin:.5em;
+  font-size:25px;
+  font-family:arial;
+  font-weight:bold;
+  position:relative;
+  display:inline-block;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width:5em;
+  height:5em;
+  background:#555;
+  padding:30px 0 0 30px;
+  color:white;
+  border-radius:50%;
+  position:relative;
+  border:.5em dashed white;
+  transition:all .5s ease;
+  backface-visibility:hidden;
+  top: -30px;
+}
+.pokerchip.red{background:#DD4631}
+.pokerchip.blue{background:#317DDD}
+.pokerchip.iso{transform: perspective(3000px) rotateX(55deg) rotateZ(-40deg);box-shadow:-1px 1px 0px #555,-2px 2px 0px #555,-3px 3px 0px #555,-4px 4px 0px #555,-5px 5px 0px #555,-6px 6px 10px #555}
+.pokerchip.iso:hover{transform: perspective(3000px) rotateX(360deg) rotateZ(-40deg) translateZ(3em);}
